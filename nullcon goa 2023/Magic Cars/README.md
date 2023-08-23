@@ -64,11 +64,11 @@ So adding gif header in the file the server can be easily exploited
 
 So to exploit this we will set the header of the file to **GIF89a**. And then we will inject some php code to exploit the server.
 
-We will name this file as exploit.php%00.gif. The nullbyte will bypass the checks performed and the name of the file which will be uploaded on the server will be exploit.php as it will ignore the part after the nullbyte.
+We will name this file as `exploit.php%00.gif`. The nullbyte will bypass the checks performed and the name of the file which will be uploaded on the server will be exploit.php as it will ignore the part after the nullbyte.
 
 So to exploit this server we will try to get a shell using **ngrok**
 
-exploit.php%00.gif looks like:
+`exploit.php%00.gif` looks like:
 
 ```php
 GIF89a
@@ -81,7 +81,7 @@ To retrieve the flag, we will use ngrok to get reverse shell.
 
 After uploading the file when we open it we get the shell.
 
-The flag is located in /var/www/html named **flag.flag**.
+The flag is located in `/var/www/html` and is named **flag.flag**.
 
 ![Flag](./images/flag.png) 
 
