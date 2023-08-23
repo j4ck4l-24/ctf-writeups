@@ -1,4 +1,4 @@
-# Web CTF Challenge - TYPicalBoss
+# Web nullcon Goa HackIM CTF 2023 TYPicalBoss
 
 Description: My boss just implemented his first PHP website. He mentioned that he managed to calculate a hash that is equal to 0??? I suppose he is not very experienced in PHP yet.
 Author: @moaath
@@ -36,7 +36,5 @@ Flag: ENO{m4ny_th1ng5_c4n_g0_wr0ng_1f_y0u_d0nt_ch3ck_typ35}
 
 ![Flag](./flag.png)
 
-Remember that the images provided here are for illustrative purposes and should be replaced with the actual images when attempting the challenge.
-
-**Note:** Make sure the images are correctly linked with the appropriate paths in your Markdown file.
+Thank You
 
