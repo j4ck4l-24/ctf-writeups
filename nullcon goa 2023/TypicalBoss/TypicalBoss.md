@@ -34,7 +34,7 @@ To retrieve the flag, we need to log in with the username 'admin' and the passwo
 Username: admin
 Password: 10932435112
 
-Flag: ENO{m4ny_th1ng5_c4n_g0_wr0ng_1f_y0u_d0nt_ch3ck_typ35}
+Flag: **ENO{m4ny_th1ng5_c4n_g0_wr0ng_1f_y0u_d0nt_ch3ck_typ35}**
 
 ![Flag](./flag.png)
 
