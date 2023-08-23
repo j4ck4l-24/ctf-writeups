@@ -40,3 +40,4 @@ Flag: ENO{m4ny_th1ng5_c4n_g0_wr0ng_1f_y0u_d0nt_ch3ck_typ35}
 
 Thank You
 
+DON'T change anything else just increase the size of typical boss
