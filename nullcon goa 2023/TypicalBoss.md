@@ -1,4 +1,4 @@
-## nullcon Goa HackIM CTF 2023
+# Nullcon Goa HackIM CTF 2023
 # Web
 <span style="font-size: larger;">TYPicalBoss</span>
 
