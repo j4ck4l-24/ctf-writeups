@@ -7,6 +7,7 @@ Author: @moaath
 
 ## Challenge Overview
 ![Index](./images/index.png)
+
 We have been given a website [http://52.59.124.14:10022/index.php](http://52.59.124.14:10022/index.php). The website includes a basic login page at the route `login.php`, which takes username and password as input.
 
 When we access the main directory '/' of the website, we can see some files:
