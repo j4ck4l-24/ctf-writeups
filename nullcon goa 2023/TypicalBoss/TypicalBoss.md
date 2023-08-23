@@ -23,7 +23,7 @@ As we observe the hashed passwords, we notice that password of admin starts with
 
 ## Exploiting the Vulnerability
 
-To exploit this vulnerability, we need to find a string whose SHA-1 hash starts with '0e'. One common technique for this is known as Type Juggling. More details about this technique can be found [here](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Type%20Juggling/README.md).
+To exploit this vulnerability, we need to find a value whose SHA-1 hash starts with '0e'. One common technique for this is known as Type Juggling. More details about this technique can be found [here](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Type%20Juggling/README.md).
 
 For instance, the SHA-1 hash of '10932435112' starts with '0e', so in PHP, it will be interpreted as 0.
 
