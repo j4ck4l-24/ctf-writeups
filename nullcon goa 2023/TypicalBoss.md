@@ -19,7 +19,7 @@ The file that catches our interest is `database.db`. If we open it with a databa
 
 ## Vulnerability Identification
 
-As we observe the hashed passwords, we notice that some of them start with '0e'. This is a common vulnerability in PHP, where the hashed password is interpreted as 0 instead of the actual hash value, e.g., '0e12345678912345678920202020202020202020'.
+As we observe the hashed passwords, we notice that password of admin starts with '0e'. This is a common vulnerability in PHP, where the hashed password is interpreted as 0 instead of the actual hash value '0e12345678912345678920202020202020202020'.
 
 ## Exploiting the Vulnerability
 
@@ -40,4 +40,3 @@ Flag: ENO{m4ny_th1ng5_c4n_g0_wr0ng_1f_y0u_d0nt_ch3ck_typ35}
 
 Thank You
 
-DON'T change anything else just increase the size of typical boss
