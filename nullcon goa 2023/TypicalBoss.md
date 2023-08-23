@@ -1,89 +1,42 @@
-Web\
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--\
-1) TYPicalBoss
+# Web CTF Challenge - TYPicalBoss
 
-\
-Description: My boss just implemented his first PHP website. He
-mentioned that he managed to calculate a hash that is equal to 0??? I
-suppose he is not very experienced in PHP yet. Author: \@moaath
+Description: My boss just implemented his first PHP website. He mentioned that he managed to calculate a hash that is equal to 0??? I suppose he is not very experienced in PHP yet.
+Author: @moaath
 
-\
-![](./index.png){width="14.025cm"
-height="15.48cm"}So we have been given this site
-<http://52.59.124.14:10022/index.php> . There is a basic login page at
-route login.php taking username and password as input.\
-When we go to [t](http://52.59.124.14:10022/)he main directory '/' we
-can see some files.\
-\
-\
-\
-![](./main.png){width="12.243cm"
-height="6.562cm"}\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-The interesting file is databse.db . If we open it with db browser we
-can see usernames and the hashed password.
+## Challenge Overview
 
-![](./database.png){width="9.67cm"
-height="3.254cm"}
+We have been given access to a website at [http://52.59.124.14:10022/index.php](http://52.59.124.14:10022/index.php). The website includes a basic login page at the route `login.php`, which takes username and password as input.
 
-So as soon as we see ***'0e'*** in the hashed password we identify it as
-a common vulnerability in PHP. So the hashed password will be
-interpreted as 0 in php instead of
-***'0e12345678912345678920202020202020202020'***
+When we access the main directory '/' of the website, we can see some files:
 
-\
-So we have to find a string whose SHA-1 hash starts from 0e.\
-There is a common technique known as Type-Juggling.\
-We can find hashes starting with 0 using this technique.\
-<https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Type%20Juggling/README.md>\
-\
-SHA-1 hash of 10932435112 starts with 0e so in PHP it will be
-interpreted as 0.\
-\
-We get the flag after we login with username as admin and password as
-10932435112.\
-\
-**ENO{m4ny_th1ng5_c4n_g0_wr0ng_1f_y0u_d0nt_ch3ck_typ35}\
-\
-**![](./flag.png){width="13.379cm"
-height="14.307cm"}**\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-**
+![Main Directory](./main.png)
+
+The file that catches our interest is `database.db`. If we open it with a database browser, we can see a list of usernames and their corresponding hashed passwords:
+
+![Database](./database.png)
+
+## Vulnerability Identification
+
+As we observe the hashed passwords, we notice that some of them start with '0e'. This is a common vulnerability in PHP, where the hashed password is interpreted as 0 instead of the actual hash value, e.g., '0e12345678912345678920202020202020202020'.
+
+## Exploiting the Vulnerability
+
+To exploit this vulnerability, we need to find a string whose SHA-1 hash starts with '0e'. One common technique for this is known as Type Juggling. More details about this technique can be found [here](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Type%20Juggling/README.md).
+
+For instance, the SHA-1 hash of '10932435112' starts with '0e', so in PHP, it will be interpreted as 0.
+
+## Obtaining the Flag
+
+To retrieve the flag, we need to log in with the username 'admin' and the password '10932435112':
+
+Username: admin
+Password: 10932435112
+
+Flag: ENO{m4ny_th1ng5_c4n_g0_wr0ng_1f_y0u_d0nt_ch3ck_typ35}
+
+![Flag](./flag.png)
+
+Remember that the images provided here are for illustrative purposes and should be replaced with the actual images when attempting the challenge.
+
+**Note:** Make sure the images are correctly linked with the appropriate paths in your Markdown file.
+
