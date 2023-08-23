@@ -1,4 +1,6 @@
-# Web nullcon Goa HackIM CTF 2023 TYPicalBoss
+## nullcon Goa HackIM CTF 2023
+# Web 
+TYPicalBoss
 
 Description: My boss just implemented his first PHP website. He mentioned that he managed to calculate a hash that is equal to 0??? I suppose he is not very experienced in PHP yet.
 Author: @moaath
