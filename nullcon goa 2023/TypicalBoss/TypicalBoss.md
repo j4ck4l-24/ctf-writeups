@@ -6,16 +6,16 @@ Description: My boss just implemented his first PHP website. He mentioned that h
 Author: @moaath
 
 ## Challenge Overview
-
+![Index](./images/index.png)
 We have been given a website [http://52.59.124.14:10022/index.php](http://52.59.124.14:10022/index.php). The website includes a basic login page at the route `login.php`, which takes username and password as input.
 
 When we access the main directory '/' of the website, we can see some files:
 
-![Main Directory](./main.png)
+![Main Directory](./images/main.png)
 
 The file that catches our interest is `database.db`. If we open it with a database browser, we can see a list of usernames and their corresponding hashed passwords:
 
-![Database](./database.png)
+![Database](./images/database.png)
 
 ## Vulnerability Identification
 
@@ -36,7 +36,7 @@ Password: 10932435112
 
 Flag: **ENO{m4ny_th1ng5_c4n_g0_wr0ng_1f_y0u_d0nt_ch3ck_typ35}**
 
-![Flag](./flag.png)
+![Flag](./images/flag.png)
 
 Thank You
 
