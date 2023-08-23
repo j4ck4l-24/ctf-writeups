@@ -1,11 +1,12 @@
 # Nullcon Goa HackIM CTF 2023
-# Web
-<span style="font-size: larger;">TYPicalBoss</span>
+
+# Web/TYPicalBoss
+
+## Challenge Overview
 
 Description: My boss just implemented his first PHP website. He mentioned that he managed to calculate a hash that is equal to 0??? I suppose he is not very experienced in PHP yet.
 Author: @moaath
 
-## Challenge Overview
 ![Index](./images/index.png)
 
 We have been given a website [http://52.59.124.14:10022/index.php](http://52.59.124.14:10022/index.php). The website includes a basic login page at the route `login.php`, which takes username and password as input.

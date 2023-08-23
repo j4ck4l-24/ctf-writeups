@@ -1,12 +1,11 @@
 # Nullcon Goa HackIM CTF 2023
 
-## Web
+## Web/Magic Cars
 
-<span style="font-size: larger;">Magic Cars</span>
+## Challenge Overview
 
 Description: Who doesn't love Magical Cars? go checkout this cool website and even upload your fav gif to support it. Author: @moaath
 
-## Challenge Overview
 ![Index](./images/index.png)
 
 We have been given a website [http://52.59.124.14:10021/](http://52.59.124.14:10021/). We can see three options there. But only gallery seems to be interesting.
